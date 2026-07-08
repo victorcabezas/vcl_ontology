@@ -1,0 +1,841 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2003/01/geo", "http://www.w3.org/2000/01/rdf-schema", "https://saref.etsi.org/core/v4.1.1", "http://www.w3.org/2001/XMLSchema", "http://mydomain.namespace.com/def/", "http://example.org/def/base", "http://pte2.namespace.com/def/", "http://iec.ch/TC57/2013/CIM-schema-cim17", "http://www.opengis.net/ont/geosparql" ],
+    "title" : {
+      "undefined" : "Example Ontology"
+    },
+    "iri" : "http://example.org/def/base#",
+    "version" : "0.0.2",
+    "author" : [ "Víctor Cabezas" ],
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Víctor Cabezas",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.2",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Example Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://example.org/def/base#Organization",
+    "baseIri" : "http://example.org/def/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "Organization"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "https://saref.etsi.org/core/v4.1.1/Sensor",
+    "baseIri" : "https://saref.etsi.org/core/v4.1.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sensor",
+      "undefined" : "Sensor"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#SpatialObject",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialObject",
+      "undefined" : "Spatial Object"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://example.org/def/base#PowerItem",
+    "baseIri" : "http://example.org/def/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PowerItem",
+      "undefined" : "PowerItem"
+    },
+    "subClasses" : [ "7", "8", "9", "10" ],
+    "comment" : {
+      "undefined" : "PowerItem refers to the items objectively existing in the electric power industry."
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://pte2.namespace.com/def/#ConductingEquipment",
+    "baseIri" : "http://pte2.namespace.com/def/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConductingEquipment",
+      "undefined" : "Conducting Equipment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://example.org/def/base#Time",
+    "baseIri" : "http://example.org/def/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Time",
+      "undefined" : "Time"
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://example.org/def/base#EquipmentContainer",
+    "baseIri" : "http://example.org/def/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EquipmentContainer",
+      "undefined" : "EquipmentContainer"
+    },
+    "subClasses" : [ "15", "16" ],
+    "id" : "7",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://pte2.namespace.com/def/#EquipmentContainer",
+    "baseIri" : "http://pte2.namespace.com/def/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EquipmentContainer",
+      "undefined" : "DEPRECATED Equipment Container"
+    },
+    "attributes" : [ "external", "deprecated" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://example.org/def/base#Substation",
+    "baseIri" : "http://example.org/def/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Substation",
+      "undefined" : "Substation"
+    },
+    "individuals" : [ {
+      "iri" : "http://example.org/def/base#2",
+      "baseIri" : "http://example.org/def/base",
+      "labels" : {
+        "IRI-based" : "2"
+      }
+    }, {
+      "iri" : "http://example.org/def/base#1",
+      "baseIri" : "http://example.org/def/base",
+      "labels" : {
+        "IRI-based" : "1"
+      }
+    } ],
+    "id" : "15",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://example.org/def/base#Terminal",
+    "baseIri" : "http://example.org/def/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Terminal",
+      "undefined" : "Terminal"
+    },
+    "id" : "10",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#Geometry",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Geometry",
+      "undefined" : "Geometry"
+    },
+    "subClasses" : [ "35" ],
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://pte2.namespace.com/def/#Line",
+    "baseIri" : "http://pte2.namespace.com/def/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Line",
+      "undefined" : "Line"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://pte2.namespace.com/def/#ConnectivityNode",
+    "baseIri" : "http://pte2.namespace.com/def/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConnectivityNode",
+      "undefined" : "ConnectivityNode"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "44",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#Feature",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Feature",
+      "undefined" : "Feature"
+    },
+    "subClasses" : [ "26" ],
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://example.org/def/base#PowerEvent",
+    "baseIri" : "http://example.org/def/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PowerEvent",
+      "undefined" : "PowerEvent"
+    },
+    "id" : "29",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://saref.etsi.org/core/v4.1.1/Device",
+    "baseIri" : "https://saref.etsi.org/core/v4.1.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "undefined" : "Device"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://example.org/def/base#PowerThing",
+    "baseIri" : "http://example.org/def/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PowerThing",
+      "undefined" : "PowerThing"
+    },
+    "subClasses" : [ "29", "5" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://iec.ch/TC57/2013/CIM-schema-cim17#EnergyConsumer",
+    "baseIri" : "http://iec.ch/TC57/2013/CIM-schema-cim17",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnergyConsumer",
+      "undefined" : "Energy Consumer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://example.org/def/base#Location",
+    "baseIri" : "http://example.org/def/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location",
+      "undefined" : "Location"
+    },
+    "comment" : {
+      "undefined" : "Geographical location"
+    },
+    "id" : "19"
+  }, {
+    "iri" : "http://pte2.namespace.com/def/#Equipment",
+    "baseIri" : "http://pte2.namespace.com/def/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Equipment",
+      "undefined" : "Equipment"
+    },
+    "subClasses" : [ "11", "22" ],
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://pte2.namespace.com/def/#ProtectionEquipment",
+    "baseIri" : "http://pte2.namespace.com/def/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProtectionEquipment",
+      "undefined" : "Protection Equipment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/Point",
+    "baseIri" : "http://www.w3.org/2003/01/geo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point",
+      "undefined" : "Point"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "https://saref.etsi.org/core/v4.1.1/Property",
+    "baseIri" : "https://saref.etsi.org/core/v4.1.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property",
+      "undefined" : "Property"
+    },
+    "attributes" : [ "external" ],
+    "id" : "54"
+  } ],
+  "property" : [ {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://example.org/def/base#phases",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "phases",
+      "undefined" : "phases"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "It describes the phase corresponding to conducting equipment"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://example.org/def/base#address",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "address",
+      "undefined" : "address"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Address"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "range" : "8",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "8",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "4",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "6",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://example.org/def/base#id",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "id",
+      "undefined" : "id"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Object ID"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://example.org/def/base#name",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Object name"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "range" : "7",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "7",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "26",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "5",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "5",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "5",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "3",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://example.org/def/base#substationProperty",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "substationProperty",
+      "undefined" : "substationProperty"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "Property of substation"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://example.org/def/base#connectTo",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "connectTo",
+      "undefined" : "connectTo"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Terminals are connected at a node with zero impedance. The measure-ment of a node applies to all of its terminals."
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://example.org/def/base#y",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "y",
+      "undefined" : "y"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Latitude, or other coordinates."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://mydomain.namespace.com/def/#locatedAt",
+    "baseIri" : "http://mydomain.namespace.com/def/",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "locatedAt",
+      "undefined" : "located at"
+    },
+    "domain" : "2",
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://example.org/def/base#contain",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "contain",
+      "undefined" : "contain"
+    },
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://example.org/def/base#instanceOf",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "instanceOf",
+      "undefined" : "instanceOf"
+    },
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://mydomain.namespace.com/def/#locatedAt",
+    "baseIri" : "http://mydomain.namespace.com/def/",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "locatedAt",
+      "undefined" : "located at"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://example.org/def/base#isFaultSystem",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "isFaultSystem",
+      "undefined" : "isFaultSystem"
+    },
+    "minCardinality" : "1",
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "Whether to access the fault information of a remote transmission system"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://example.org/def/base#x",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "x",
+      "undefined" : "x"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Longitude, or other coordinates."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://example.org/def/base#normallyInService",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "normallyInService",
+      "undefined" : "normallyInService"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Whether the equipment is in  normal operation"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://example.org/def/base#coordType",
+    "baseIri" : "http://example.org/def/base",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "coordType",
+      "undefined" : "coordType"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Coordinate type"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  } ]
+}

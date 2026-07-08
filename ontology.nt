@@ -1,0 +1,280 @@
+<http://example.org/def/base#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://example.org/def/base#> <http://purl.org/dc/elements/1.1/creator> "Víctor Cabezas" .
+<http://example.org/def/base#> <http://purl.org/dc/elements/1.1/title> "Example Ontology" .
+<http://example.org/def/base#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.2" .
+<http://example.org/def/base#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://example.org/def/base#connectTo
+<http://example.org/def/base#connectTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/def/base#connectTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://pte2.namespace.com/def/#ConnectivityNode> .
+<http://example.org/def/base#connectTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/def/base#Terminal> .
+<http://example.org/def/base#connectTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Terminals are connected at a node with zero impedance. The measure-ment of a node applies to all of its terminals." .
+<http://example.org/def/base#connectTo> <http://www.w3.org/2000/01/rdf-schema#label> "connectTo" .
+# 
+# http://example.org/def/base#contain
+<http://example.org/def/base#contain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/def/base#contain> <http://www.w3.org/2000/01/rdf-schema#label> "contain" .
+# 
+# http://example.org/def/base#instanceOf
+<http://example.org/def/base#instanceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/def/base#instanceOf> <http://www.w3.org/2000/01/rdf-schema#label> "instanceOf" .
+# 
+# http://mydomain.namespace.com/def/#locatedAt
+<http://mydomain.namespace.com/def/#locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mydomain.namespace.com/def/#locatedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core/v4.1.1/Device> .
+<http://mydomain.namespace.com/def/#locatedAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core/v4.1.1/Property> .
+<http://mydomain.namespace.com/def/#locatedAt> <http://www.w3.org/2000/01/rdf-schema#label> "located at" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://example.org/def/base#address
+<http://example.org/def/base#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/base#address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/base#Location> .
+<http://example.org/def/base#address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/def/base#address> <http://www.w3.org/2000/01/rdf-schema#comment> "Address" .
+<http://example.org/def/base#address> <http://www.w3.org/2000/01/rdf-schema#label> "address" .
+# 
+# http://example.org/def/base#coordType
+<http://example.org/def/base#coordType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/base#coordType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/base#Location> .
+<http://example.org/def/base#coordType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/def/base#coordType> <http://www.w3.org/2000/01/rdf-schema#comment> "Coordinate type" .
+<http://example.org/def/base#coordType> <http://www.w3.org/2000/01/rdf-schema#label> "coordType" .
+# 
+# http://example.org/def/base#id
+<http://example.org/def/base#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/base#id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/base#PowerThing> .
+<http://example.org/def/base#id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/def/base#id> <http://www.w3.org/2000/01/rdf-schema#comment> "Object ID" .
+<http://example.org/def/base#id> <http://www.w3.org/2000/01/rdf-schema#label> "id" .
+# 
+# http://example.org/def/base#isFaultSystem
+<http://example.org/def/base#isFaultSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/base#isFaultSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/base#Substation> .
+<http://example.org/def/base#isFaultSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.org/def/base#isFaultSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether to access the fault information of a remote transmission system" .
+<http://example.org/def/base#isFaultSystem> <http://www.w3.org/2000/01/rdf-schema#label> "isFaultSystem" .
+# 
+# http://example.org/def/base#name
+<http://example.org/def/base#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/base#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/base#PowerThing> .
+<http://example.org/def/base#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/def/base#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Object name" .
+<http://example.org/def/base#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# http://example.org/def/base#normallyInService
+<http://example.org/def/base#normallyInService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/base#normallyInService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://pte2.namespace.com/def/#Equipment> .
+<http://example.org/def/base#normallyInService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.org/def/base#normallyInService> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether the equipment is in  normal operation" .
+<http://example.org/def/base#normallyInService> <http://www.w3.org/2000/01/rdf-schema#label> "normallyInService" .
+# 
+# http://example.org/def/base#phases
+<http://example.org/def/base#phases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/base#phases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://pte2.namespace.com/def/#ConductingEquipment> .
+<http://example.org/def/base#phases> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/def/base#phases> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes the phase corresponding to conducting equipment" .
+<http://example.org/def/base#phases> <http://www.w3.org/2000/01/rdf-schema#label> "phases" .
+# 
+# http://example.org/def/base#substationProperty
+<http://example.org/def/base#substationProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/base#substationProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/def/base#substationProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property of substation" .
+<http://example.org/def/base#substationProperty> <http://www.w3.org/2000/01/rdf-schema#label> "substationProperty" .
+# 
+# http://example.org/def/base#x
+<http://example.org/def/base#x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/base#x> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/base#Location> .
+<http://example.org/def/base#x> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/def/base#x> <http://www.w3.org/2000/01/rdf-schema#comment> "Longitude, or other coordinates." .
+<http://example.org/def/base#x> <http://www.w3.org/2000/01/rdf-schema#label> "x" .
+# 
+# http://example.org/def/base#y
+<http://example.org/def/base#y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/base#y> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/base#Location> .
+<http://example.org/def/base#y> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/def/base#y> <http://www.w3.org/2000/01/rdf-schema#comment> "Latitude, or other coordinates." .
+<http://example.org/def/base#y> <http://www.w3.org/2000/01/rdf-schema#label> "y" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://example.org/def/base#EquipmentContainer
+<http://example.org/def/base#EquipmentContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/base#EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/def/base#PowerItem> .
+<http://example.org/def/base#EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#label> "EquipmentContainer" .
+# 
+# http://example.org/def/base#Location
+<http://example.org/def/base#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/base#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Geographical location" .
+<http://example.org/def/base#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+# 
+# http://example.org/def/base#Organization
+<http://example.org/def/base#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/base#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+# 
+# http://example.org/def/base#PowerEvent
+<http://example.org/def/base#PowerEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/base#PowerEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/def/base#PowerThing> .
+<http://example.org/def/base#PowerEvent> <http://www.w3.org/2000/01/rdf-schema#label> "PowerEvent" .
+# 
+# http://example.org/def/base#PowerItem
+<http://example.org/def/base#PowerItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/base#PowerItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/def/base#PowerThing> .
+<http://example.org/def/base#PowerItem> <http://www.w3.org/2000/01/rdf-schema#comment> "PowerItem refers to the items objectively existing in the electric power industry." .
+<http://example.org/def/base#PowerItem> <http://www.w3.org/2000/01/rdf-schema#label> "PowerItem" .
+# 
+# http://example.org/def/base#PowerThing
+<http://example.org/def/base#PowerThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/base#PowerThing> <http://www.w3.org/2000/01/rdf-schema#label> "PowerThing" .
+# 
+# http://example.org/def/base#Substation
+<http://example.org/def/base#Substation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/base#Substation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/def/base#EquipmentContainer> .
+<http://example.org/def/base#Substation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/def/base#isFaultSystem> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/def/base#Substation> <http://www.w3.org/2000/01/rdf-schema#label> "Substation" .
+# 
+# http://example.org/def/base#Terminal
+<http://example.org/def/base#Terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/base#Terminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/def/base#PowerItem> .
+<http://example.org/def/base#Terminal> <http://www.w3.org/2000/01/rdf-schema#label> "Terminal" .
+# 
+# http://example.org/def/base#Time
+<http://example.org/def/base#Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/base#Time> <http://www.w3.org/2000/01/rdf-schema#label> "Time" .
+# 
+# http://iec.ch/TC57/2013/CIM-schema-cim17#EnergyConsumer
+<http://iec.ch/TC57/2013/CIM-schema-cim17#EnergyConsumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iec.ch/TC57/2013/CIM-schema-cim17#EnergyConsumer> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Consumer" .
+# 
+# http://pte2.namespace.com/def/#ConductingEquipment
+<http://pte2.namespace.com/def/#ConductingEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://pte2.namespace.com/def/#ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://pte2.namespace.com/def/#Equipment> .
+<http://pte2.namespace.com/def/#ConductingEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "Conducting Equipment" .
+# 
+# http://pte2.namespace.com/def/#ConnectivityNode
+<http://pte2.namespace.com/def/#ConnectivityNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://pte2.namespace.com/def/#ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/def/base#PowerItem> .
+<http://pte2.namespace.com/def/#ConnectivityNode> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectivityNode" .
+# 
+# http://pte2.namespace.com/def/#Equipment
+<http://pte2.namespace.com/def/#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://pte2.namespace.com/def/#Equipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/def/base#PowerItem> .
+<http://pte2.namespace.com/def/#Equipment> <http://www.w3.org/2000/01/rdf-schema#label> "Equipment" .
+# 
+# http://pte2.namespace.com/def/#EquipmentContainer
+<http://pte2.namespace.com/def/#EquipmentContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://pte2.namespace.com/def/#EquipmentContainer> <http://www.w3.org/2000/01/rdf-schema#label> "DEPRECATED Equipment Container" .
+<http://pte2.namespace.com/def/#EquipmentContainer> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://pte2.namespace.com/def/#Line
+<http://pte2.namespace.com/def/#Line> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://pte2.namespace.com/def/#Line> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/def/base#EquipmentContainer> .
+<http://pte2.namespace.com/def/#Line> <http://www.w3.org/2000/01/rdf-schema#label> "Line" .
+# 
+# http://pte2.namespace.com/def/#ProtectionEquipment
+<http://pte2.namespace.com/def/#ProtectionEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://pte2.namespace.com/def/#ProtectionEquipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://pte2.namespace.com/def/#Equipment> .
+<http://pte2.namespace.com/def/#ProtectionEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "Protection Equipment" .
+# 
+# http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature" .
+# 
+# http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry" .
+# 
+# http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Object" .
+# 
+# http://www.w3.org/2003/01/geo/Point
+<http://www.w3.org/2003/01/geo/Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/01/geo/Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Geometry> .
+<http://www.w3.org/2003/01/geo/Point> <http://www.w3.org/2000/01/rdf-schema#label> "Point" .
+# 
+# https://saref.etsi.org/core/v4.1.1/Device
+<https://saref.etsi.org/core/v4.1.1/Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/v4.1.1/Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/v4.1.1/Property> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://mydomain.namespace.com/def/#locatedAt> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core/v4.1.1/Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
+# 
+# https://saref.etsi.org/core/v4.1.1/Property
+<https://saref.etsi.org/core/v4.1.1/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/v4.1.1/Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property" .
+# 
+# https://saref.etsi.org/core/v4.1.1/Sensor
+<https://saref.etsi.org/core/v4.1.1/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/v4.1.1/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/v4.1.1/Device> .
+<https://saref.etsi.org/core/v4.1.1/Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://example.org/def/base#1
+<http://example.org/def/base#1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/def/base#1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/base#Substation> .
+<http://example.org/def/base#1> <http://example.org/def/base#isFaultSystem> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://example.org/def/base#2
+<http://example.org/def/base#2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/def/base#2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/base#Substation> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
