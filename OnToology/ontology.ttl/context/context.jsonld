@@ -1,0 +1,147 @@
+{
+  "@context" : {
+    "Substation" : {
+      "@id" : "http://example.org/def/base#Substation"
+    },
+    "instanceOf" : {
+      "@id" : "http://example.org/def/base#instanceOf",
+      "@type" : "@id"
+    },
+    "Line" : {
+      "@id" : "http://pte2.namespace.com/def/#Line"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Terminal" : {
+      "@id" : "http://example.org/def/base#Terminal"
+    },
+    "ProtectionEquipment" : {
+      "@id" : "http://pte2.namespace.com/def/#ProtectionEquipment"
+    },
+    "Organization" : {
+      "@id" : "http://example.org/def/base#Organization"
+    },
+    "Equipment" : {
+      "@id" : "http://pte2.namespace.com/def/#Equipment"
+    },
+    "PowerEvent" : {
+      "@id" : "http://example.org/def/base#PowerEvent"
+    },
+    "Geometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
+    "normallyInService" : {
+      "@id" : "http://example.org/def/base#normallyInService",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Feature" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "x" : {
+      "@id" : "http://example.org/def/base#x",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Location" : {
+      "@id" : "http://example.org/def/base#Location"
+    },
+    "ConductingEquipment" : {
+      "@id" : "http://pte2.namespace.com/def/#ConductingEquipment"
+    },
+    "id" : {
+      "@id" : "http://example.org/def/base#id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "name" : {
+      "@id" : "http://example.org/def/base#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EnergyConsumer" : {
+      "@id" : "http://iec.ch/TC57/2013/CIM-schema-cim17#EnergyConsumer"
+    },
+    "connectTo" : {
+      "@id" : "http://example.org/def/base#connectTo",
+      "@type" : "@id"
+    },
+    "locatedAt" : {
+      "@id" : "http://mydomain.namespace.com/def/#locatedAt",
+      "@type" : "@id"
+    },
+    "address" : {
+      "@id" : "http://example.org/def/base#address",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "Point" : {
+      "@id" : "http://www.w3.org/2003/01/geo/Point"
+    },
+    "EquipmentContainer" : {
+      "@id" : "http://pte2.namespace.com/def/#EquipmentContainer"
+    },
+    "Property" : {
+      "@id" : "https://saref.etsi.org/core/v4.1.1/Property"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "ConnectivityNode" : {
+      "@id" : "http://pte2.namespace.com/def/#ConnectivityNode"
+    },
+    "isFaultSystem" : {
+      "@id" : "http://example.org/def/base#isFaultSystem",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "SpatialObject" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+    },
+    "y" : {
+      "@id" : "http://example.org/def/base#y",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "PowerItem" : {
+      "@id" : "http://example.org/def/base#PowerItem"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "substationProperty" : {
+      "@id" : "http://example.org/def/base#substationProperty",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "coordType" : {
+      "@id" : "http://example.org/def/base#coordType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Device" : {
+      "@id" : "https://saref.etsi.org/core/v4.1.1/Device"
+    },
+    "Time" : {
+      "@id" : "http://example.org/def/base#Time"
+    },
+    "Sensor" : {
+      "@id" : "https://saref.etsi.org/core/v4.1.1/Sensor"
+    },
+    "contain" : {
+      "@id" : "http://example.org/def/base#contain",
+      "@type" : "@id"
+    },
+    "phases" : {
+      "@id" : "http://example.org/def/base#phases",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PowerThing" : {
+      "@id" : "http://example.org/def/base#PowerThing"
+    }
+  }
+}

@@ -1,0 +1,307 @@
+@prefix : <http://example.org/def/base#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.org/def/base#> .
+
+<http://example.org/def/base#> rdf:type owl:Ontology ;
+                                <http://purl.org/dc/elements/1.1/creator> "Víctor Cabezas" ;
+                                <http://purl.org/dc/elements/1.1/title> "Example Ontology" ;
+                                owl:versionInfo "0.0.2" ;
+                                <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/def/base#connectTo
+:connectTo rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://pte2.namespace.com/def/#ConnectivityNode> ;
+           rdfs:range :Terminal ;
+           rdfs:comment "Terminals are connected at a node with zero impedance. The measure-ment of a node applies to all of its terminals." ;
+           rdfs:label "connectTo" .
+
+
+###  http://example.org/def/base#contain
+:contain rdf:type owl:ObjectProperty ;
+         rdfs:label "contain" .
+
+
+###  http://example.org/def/base#instanceOf
+:instanceOf rdf:type owl:ObjectProperty ;
+            rdfs:label "instanceOf" .
+
+
+###  http://mydomain.namespace.com/def/#locatedAt
+<http://mydomain.namespace.com/def/#locatedAt> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://saref.etsi.org/core/v4.1.1/Device> ;
+                                               rdfs:range <https://saref.etsi.org/core/v4.1.1/Property> ;
+                                               rdfs:label "located at" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/def/base#address
+:address rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Location ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Address" ;
+         rdfs:label "address" .
+
+
+###  http://example.org/def/base#coordType
+:coordType rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Location ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Coordinate type" ;
+           rdfs:label "coordType" .
+
+
+###  http://example.org/def/base#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :PowerThing ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Object ID" ;
+    rdfs:label "id" .
+
+
+###  http://example.org/def/base#isFaultSystem
+:isFaultSystem rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Substation ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "Whether to access the fault information of a remote transmission system" ;
+               rdfs:label "isFaultSystem" .
+
+
+###  http://example.org/def/base#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :PowerThing ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Object name" ;
+      rdfs:label "name" .
+
+
+###  http://example.org/def/base#normallyInService
+:normallyInService rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <http://pte2.namespace.com/def/#Equipment> ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:comment "Whether the equipment is in  normal operation" ;
+                   rdfs:label "normallyInService" .
+
+
+###  http://example.org/def/base#phases
+:phases rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://pte2.namespace.com/def/#ConductingEquipment> ;
+        rdfs:range xsd:string ;
+        rdfs:comment "It describes the phase corresponding to conducting equipment" ;
+        rdfs:label "phases" .
+
+
+###  http://example.org/def/base#substationProperty
+:substationProperty rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Property of substation" ;
+                    rdfs:label "substationProperty" .
+
+
+###  http://example.org/def/base#x
+:x rdf:type owl:DatatypeProperty ;
+   rdfs:domain :Location ;
+   rdfs:range xsd:decimal ;
+   rdfs:comment "Longitude, or other coordinates." ;
+   rdfs:label "x" .
+
+
+###  http://example.org/def/base#y
+:y rdf:type owl:DatatypeProperty ;
+   rdfs:domain :Location ;
+   rdfs:range xsd:decimal ;
+   rdfs:comment "Latitude, or other coordinates." ;
+   rdfs:label "y" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/def/base#EquipmentContainer
+:EquipmentContainer rdf:type owl:Class ;
+                    rdfs:subClassOf :PowerItem ;
+                    rdfs:label "EquipmentContainer" .
+
+
+###  http://example.org/def/base#Location
+:Location rdf:type owl:Class ;
+          rdfs:comment "Geographical location" ;
+          rdfs:label "Location" .
+
+
+###  http://example.org/def/base#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:label "Organization" .
+
+
+###  http://example.org/def/base#PowerEvent
+:PowerEvent rdf:type owl:Class ;
+            rdfs:subClassOf :PowerThing ;
+            rdfs:label "PowerEvent" .
+
+
+###  http://example.org/def/base#PowerItem
+:PowerItem rdf:type owl:Class ;
+           rdfs:subClassOf :PowerThing ;
+           rdfs:comment "PowerItem refers to the items objectively existing in the electric power industry." ;
+           rdfs:label "PowerItem" .
+
+
+###  http://example.org/def/base#PowerThing
+:PowerThing rdf:type owl:Class ;
+            rdfs:label "PowerThing" .
+
+
+###  http://example.org/def/base#Substation
+:Substation rdf:type owl:Class ;
+            rdfs:subClassOf :EquipmentContainer ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isFaultSystem ;
+                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:boolean
+                            ] ;
+            rdfs:label "Substation" .
+
+
+###  http://example.org/def/base#Terminal
+:Terminal rdf:type owl:Class ;
+          rdfs:subClassOf :PowerItem ;
+          rdfs:label "Terminal" .
+
+
+###  http://example.org/def/base#Time
+:Time rdf:type owl:Class ;
+      rdfs:label "Time" .
+
+
+###  http://iec.ch/TC57/2013/CIM-schema-cim17#EnergyConsumer
+<http://iec.ch/TC57/2013/CIM-schema-cim17#EnergyConsumer> rdf:type owl:Class ;
+                                                          rdfs:label "Energy Consumer" .
+
+
+###  http://pte2.namespace.com/def/#ConductingEquipment
+<http://pte2.namespace.com/def/#ConductingEquipment> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://pte2.namespace.com/def/#Equipment> ;
+                                                     rdfs:label "Conducting Equipment" .
+
+
+###  http://pte2.namespace.com/def/#ConnectivityNode
+<http://pte2.namespace.com/def/#ConnectivityNode> rdf:type owl:Class ;
+                                                  rdfs:subClassOf :PowerItem ;
+                                                  rdfs:label "ConnectivityNode" .
+
+
+###  http://pte2.namespace.com/def/#Equipment
+<http://pte2.namespace.com/def/#Equipment> rdf:type owl:Class ;
+                                           rdfs:subClassOf :PowerItem ;
+                                           rdfs:label "Equipment" .
+
+
+###  http://pte2.namespace.com/def/#EquipmentContainer
+<http://pte2.namespace.com/def/#EquipmentContainer> rdf:type owl:Class ;
+                                                    rdfs:label "DEPRECATED Equipment Container" ;
+                                                    owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://pte2.namespace.com/def/#Line
+<http://pte2.namespace.com/def/#Line> rdf:type owl:Class ;
+                                      rdfs:subClassOf :EquipmentContainer ;
+                                      rdfs:label "Line" .
+
+
+###  http://pte2.namespace.com/def/#ProtectionEquipment
+<http://pte2.namespace.com/def/#ProtectionEquipment> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://pte2.namespace.com/def/#Equipment> ;
+                                                     rdfs:label "Protection Equipment" .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                               rdfs:label "Feature" .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                rdfs:label "Geometry" .
+
+
+###  http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:Class ;
+                                                     rdfs:label "Spatial Object" .
+
+
+###  http://www.w3.org/2003/01/geo/Point
+<http://www.w3.org/2003/01/geo/Point> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                      rdfs:label "Point" .
+
+
+###  https://saref.etsi.org/core/v4.1.1/Device
+<https://saref.etsi.org/core/v4.1.1/Device> rdf:type owl:Class ;
+                                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://mydomain.namespace.com/def/#locatedAt> ;
+                                                              owl:allValuesFrom <https://saref.etsi.org/core/v4.1.1/Property>
+                                                            ] ;
+                                            rdfs:label "Device" .
+
+
+###  https://saref.etsi.org/core/v4.1.1/Property
+<https://saref.etsi.org/core/v4.1.1/Property> rdf:type owl:Class ;
+                                              rdfs:label "Property" .
+
+
+###  https://saref.etsi.org/core/v4.1.1/Sensor
+<https://saref.etsi.org/core/v4.1.1/Sensor> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://saref.etsi.org/core/v4.1.1/Device> ;
+                                            rdfs:label "Sensor" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/def/base#1
+<http://example.org/def/base#1> rdf:type owl:NamedIndividual ,
+                                         :Substation ;
+                                :isFaultSystem "true"^^xsd:boolean .
+
+
+###  http://example.org/def/base#2
+<http://example.org/def/base#2> rdf:type owl:NamedIndividual ,
+                                         :Substation .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
